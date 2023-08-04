@@ -1,0 +1,49 @@
+section {
+  position: relative;
+}
+
+.main {
+  margin-bottom: 2rem;
+}
+
+.quem-somos::before {
+  content: "Quem Somos";
+  display: block;
+  position: absolute;
+  color: #292929;
+  font-size: 5rem;
+  font-family:cursive;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.2em #242424;
+  right: 0;
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+}
+
+.nossa-historia::before {
+  content: "Nossa História";
+  display: block;
+  position: absolute;
+  color: #292929;
+  font-size: 5rem;
+  font-family:cursive;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.2em #242424;
+  right: 360px;
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+}
+
+.lancamentos::before {
+  content: "Lançamentos";
+  display: block;
+  position: absolute;
+  color: #292929;
+  font-size: 5rem;
+  font-family:cursive;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.2em #242424;
+  right: 0px;
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+}

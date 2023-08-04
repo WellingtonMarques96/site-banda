@@ -1,0 +1,18 @@
+.bg-header {
+  background-color: black;
+  padding: 16px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-itens {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-itens a {
+  font-weight: bold;
+  color: #777777;
+}
