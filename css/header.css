@@ -13,6 +13,38 @@
 }
 
 .menu-itens a {
+  font-size: 1rem;
   font-weight: bold;
-  color: #777777;
+  color: #777888;
+  background: linear-gradient(0deg, #cdcdcdcd 40%, #e7e7e7 100%, #242424 100%);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+@media(max-width: 56.25rem) {
+  .menu {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.25rem;
+  }
+}
+
+@media(max-width: 43.75rem) {
+  .menu-itens a {
+    font-size: 0.85rem;
+    display: flex;
+    text-align: center;
+  }
+  .menu-itens {
+    gap: .4rem;
+    align-items: center;
+  }
+}
+
+@media(max-width: 26.30rem) {
+  .menu {
+    display: flex;
+    gap: 1.25rem;
+  }
 }

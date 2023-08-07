@@ -29,7 +29,21 @@ section {
   font-family:cursive;
   text-transform: uppercase;
   text-shadow: 0.1em 0.1em 0.2em #242424;
-  right: 360px;
+  left: 0;
+  padding-left: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+.contato::before {
+  content: "Contato";
+  display: block;
+  position: absolute;
+  color: #292929;
+  font-size: 5rem;
+  font-family:cursive;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.2em #242424;
+  right: 0;
   padding-right: 2.5rem;
   padding-top: 2rem;
 }
@@ -43,7 +57,134 @@ section {
   font-family:cursive;
   text-transform: uppercase;
   text-shadow: 0.1em 0.1em 0.2em #242424;
-  right: 0px;
+  left: 0;
+  padding-left: 2.5rem;
+  padding-top: 0rem;
+}
+
+.noticias::before {
+  content: "Notícias";
+  display: block;
+  position: absolute;
+  color: #292929;
+  font-size: 5rem;
+  font-family:cursive;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.2em #242424;
+  right: 0;
   padding-right: 2.5rem;
   padding-top: 2rem;
+}
+
+@media(max-width: 81.25rem) {
+  .noticias::before,
+  .contato::before
+   {
+    font-size: 3.8rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+  }
+  .quem-somos::before{
+    font-size: 3.5rem;
+    padding-right: 1.5rem;
+    padding-top: .25rem;
+  }
+  .lancamentos::before,
+  .nossa-historia::before {
+    font-size: 3.8rem;
+  }
+}
+
+@media(max-width: 62.50rem) {
+  .lancamentos::before {
+    font-size: 3rem;
+    padding-left: 1.5rem;
+    top: -10px;
+  }
+}
+
+@media(max-width: 56.25rem) {
+  .noticias::before,
+  .contato::before
+   {
+    font-size: 3rem;
+  }
+  .quem-somos::before{
+    font-size: 2.5rem;
+  }
+  .nossa-historia::before {
+    font-size: 3rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media(max-width: 43.75rem) {
+  .noticias::before,
+  .contato::before
+   {
+    font-size: 2.5rem;
+  }
+  .quem-somos::before{
+    font-size: 2rem;
+  }
+  .nossa-historia::before,
+  .lancamentos::before {
+    font-size: 2rem;
+    top: 0px;
+  }
+}
+
+@media(max-width: 37.5rem) {
+  .noticias::before,
+  .contato::before
+   {
+    font-size: 2rem;
+  }
+  .quem-somos::before{
+    font-size: 1.75rem;
+  }
+}
+
+@media(max-width: 31.25rem) {
+  .noticias::before,
+  .contato::before,
+  .quem-somos::before
+   {
+    text-transform: initial;
+  }
+  .nossa-historia::before,
+  .lancamentos::before {
+    text-transform: initial;
+    top: -05px;
+  }
+}
+@media(max-width: 26.30rem) {
+  .noticias::before,
+  .contato::before {
+    font-size: 1.75rem;
+  }
+  .quem-somos::before {
+    font-size: 1.25rem;
+    padding-right: 0.5rem;
+  }
+  .nossa-historia::before,
+  .lancamentos::before {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 18.75rem) {
+  .noticias::before,
+  .contato::before {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+    top: -10px;
+  }
+  .quem-somos::before  {
+    top: -05px;
+  }
+  .nossa-historia::before,
+  .lancamentos::before {
+    top: -10px;
+  }
 }
