@@ -10,14 +10,15 @@
 
 <body>
   <header class="bg-header">
-    <nav class="menu container">
+    <nav class="menu container js-menu">
       <a href="#"><img width="200px" height="50px" src="./assets/img/logo.jpeg" alt="logomarca banda"></a>
-      <ul class="menu-itens">
-        <li><a href="#">Quem somos</a></li>
-        <li><a href="#">Nossa História</a></li>
-        <li><a href="#">Lançamentos</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Notícias</a></li>
+      <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+      <ul data-menu="list" class="menu-itens">
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#nossa-historia">Nossa História</a></li>
+        <li><a href="#lancamentos">Lançamentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#noticias">Notícias</a></li>
       </ul>
     </nav>
   </header>
@@ -26,33 +27,33 @@
       <img src="./assets/img/fotobranca sorrindovem.jpeg" alt="foto da banda com todos vestidos de branco e sorrindo">
     </div>
   </section>
-  <section class="container">
+  <section class="container" id="quem-somos">
     <div class="main quem-somos">
       <img src="./assets/img/fotopuff.jpeg" alt="foto da banda com todos vestidos de preto sentados e sorrindo">
     </div>
   </section>
-  <section class="container">
+  <section class="container" id="nossa-historia">
     <div class="main nossa-historia">
       <img src="./assets/img/fotobranca sorrindovem.jpeg" alt="foto da banda com todos vestidos de branco e sorrindo">
     </div>
   </section>
-  <section class="container">
+  <section class="container" id="contato">
     <div class="main contato">
       <img src="./assets/img/fotopuff.jpeg" alt="foto da banda com todos vestidos de branco e sorrindo">
     </div>
   </section>
-  <section class="container">
+  <section class="container" id="lancamentos">
     <div class="main lancamentos">
       <img src="./assets/img/fotobrancasorrindo.jpeg" alt="foto da banda com todos vestidos de branco e sorrindo">
     </div>
   </section>
-  <section class="container">
+  <section class="container" id="noticias">
     <div class="main noticias">
       <img src="./assets/img/fotopuff.jpeg" alt="foto da banda com todos vestidos de branco e sorrindo">
     </div>
   </section>
 
-  <script src="./script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>

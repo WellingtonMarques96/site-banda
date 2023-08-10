@@ -4,6 +4,19 @@ section {
 
 .main {
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.main::before {
+  content: "Essência do Louvor";
+  display: block;
+  position: absolute;
+  color: #292929;
+  text-shadow: 0.1em 0.1em 0.2em #242424;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+  font-family: 'Playfair Display SC', georgia;
+  font-size: 6rem;
 }
 
 .quem-somos::before {
@@ -77,6 +90,9 @@ section {
 }
 
 @media(max-width: 81.25rem) {
+  .main::before {
+    font-size: 4.75rem;
+  }
   .noticias::before,
   .contato::before
    {
@@ -96,6 +112,9 @@ section {
 }
 
 @media(max-width: 62.50rem) {
+  .main::before {
+    font-size: 4rem;
+  }
   .lancamentos::before {
     font-size: 3rem;
     padding-left: 1.5rem;
@@ -104,6 +123,10 @@ section {
 }
 
 @media(max-width: 56.25rem) {
+  .main::before {
+    font-size: 3.25rem;
+    padding-left: 1.5rem;
+  }
   .noticias::before,
   .contato::before
    {
@@ -119,6 +142,11 @@ section {
 }
 
 @media(max-width: 43.75rem) {
+  .main::before {
+    font-size: 2.9rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+  }
   .noticias::before,
   .contato::before
    {
@@ -135,6 +163,9 @@ section {
 }
 
 @media(max-width: 37.5rem) {
+  .main::before {
+    font-size: 2.4rem;
+  }
   .noticias::before,
   .contato::before
    {
@@ -146,11 +177,15 @@ section {
 }
 
 @media(max-width: 31.25rem) {
+  .main::before {
+    font-size: 2.1rem;
+  }
   .noticias::before,
   .contato::before,
   .quem-somos::before
    {
     text-transform: initial;
+    top: -10px;
   }
   .nossa-historia::before,
   .lancamentos::before {
@@ -167,6 +202,7 @@ section {
     font-size: 1.25rem;
     padding-right: 0.5rem;
   }
+  .main::before, 
   .nossa-historia::before,
   .lancamentos::before {
     font-size: 1.5rem;
@@ -186,5 +222,8 @@ section {
   .nossa-historia::before,
   .lancamentos::before {
     top: -10px;
+  }
+  .main::before {
+    font-size: 1.25rem;
   }
 }
